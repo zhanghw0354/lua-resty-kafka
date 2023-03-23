@@ -70,7 +70,7 @@ end
 local function _sasl_auth(sock, brk)
     local cli_id = "worker" .. pid()
     local req = request:new(request.SaslAuthenticateRequest, 0, cli_id,
-                            request.API_VERSION_V1)
+                            request.API_VERSION_V0)
 
     local msg = sasl.encode(brk.auth.mechanism, nil, brk.auth.user,
                             brk.auth.password)

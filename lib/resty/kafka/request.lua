@@ -92,7 +92,7 @@ function _M.new(self, apikey, correlation_id, client_id, api_version)
         str_int32(correlation_id),
     }
 
-    if api_version > API_VERSION_V0  then
+    if api_version >= API_VERSION_V0  then
         local cid, clen
         if not client_id or #client_id == 0 then
             cid, clen = str_int16(-1), 2
