@@ -1,4 +1,4 @@
-package = "zhw-lua-resty-kafka"
+package = "cm-lua-resty-kafka"
 version = "0.20-1"
 source = {
    url = "git://github.com/zhanghw0354/lua-resty-kafka",
